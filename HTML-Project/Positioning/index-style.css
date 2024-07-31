@@ -12,6 +12,7 @@ body {
     background: #02061A;
 }
 
+/*header*/
 header svg {
     position: absolute;
     left: -103px;
@@ -131,7 +132,7 @@ main > img {
     object-fit: contain;
     margin-bottom: 6vh;
 }
-
+/*featured on*/
 h3 {
     margin-top: 21vh;
     color: #FFF;
@@ -166,6 +167,7 @@ h3 {
     opacity: 0.5;
 }
 
+/*one monkey*/
 .cover > section:nth-of-type(2) {
     display: flex;
     justify-content: center;
@@ -288,6 +290,7 @@ h3 {
     text-align: center;
 }
 
+/*two monkeys*/
 .cover > section:nth-of-type(3) {
     display: flex;
     justify-content: center;
@@ -445,6 +448,7 @@ h3 {
     object-fit: cover;
 }
 
+/*cards with people*/
 .cover > section:nth-of-type(4) {
     margin-top: 22.9vh;
 }
@@ -511,6 +515,7 @@ h3 {
     width: 302px;
 }
 
+/*banner*/
 .cover > section:nth-of-type(5) {
     margin-top: 20.3vh;
     width: 100%;
@@ -549,6 +554,7 @@ h3 {
     background: #23263C;
 }
 
+/*footer*/
 footer {
     display: flex;
     margin: 25.6vh auto 13.1vh auto;
