@@ -84,7 +84,7 @@ h2 {
     text-transform: capitalize;
 }
 
-/*hero*/
+/*lion section*/
 main {
     margin-top: 18.4vh;
     display: flex;
@@ -97,10 +97,12 @@ main > div {
     width: 37vw;
     display: flex;
     flex-direction: column;
+
 }
 
 main > div > div > button:nth-child(1) {
     margin-right: 22px;
+    margin-left: 0;
 }
 
 main > div > div > button {
@@ -317,6 +319,9 @@ h3 {
     text-transform: capitalize;
     margin-top: 58px;
 }
+.cover > section:nth-of-type(3) > div:nth-of-type(1) button:hover {
+    background: #23263C;
+}
 
 .cards {
     display: inline-flex;
@@ -417,6 +422,9 @@ h3 {
     font-weight: 700;
     line-height: normal;
     text-transform: capitalize;
+}
+.card2 button:hover {
+        background: #23263C;
 }
 
 .cover > section:nth-of-type(3) span {
