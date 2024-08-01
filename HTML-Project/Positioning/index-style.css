@@ -584,6 +584,7 @@ footer ul {
 
 footer ul li:first-of-type {
     font-weight: 700;
+    font-size: 1.25em;
 }
 
 footer ul li {
@@ -615,7 +616,7 @@ footer ul li p {
 }
 
 footer ul li form {
-    width: 17.6vw;
+    width: 253px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -626,7 +627,7 @@ footer ul li form {
 footer ul li input {
     width: 100%;
     border: none;
-    height: 4.2vw;
+    height: 60px;
     border-radius: 50px;
     padding-left: 0.8vw;
     background: none;
@@ -643,8 +644,7 @@ footer ul li input {
 }
 
 footer ul li button {
-    width: 6.9vw;
-    height: 4vw;
+    padding: 16px 19px;
     border-radius: 50px;
     background: #262E48;
     border: none;
