@@ -134,6 +134,7 @@ main > img {
     object-fit: contain;
     margin-bottom: 6vh;
 }
+
 /*featured on*/
 h3 {
     margin-top: 21vh;
@@ -292,6 +293,10 @@ h3 {
     text-align: center;
 }
 
+.cover > section:nth-of-type(2) > div > ul li p:first-child {
+    margin-bottom: 18px;
+}
+
 /*two monkeys*/
 .cover > section:nth-of-type(3) {
     display: flex;
@@ -319,6 +324,7 @@ h3 {
     text-transform: capitalize;
     margin-top: 58px;
 }
+
 .cover > section:nth-of-type(3) > div:nth-of-type(1) button:hover {
     background: #23263C;
 }
@@ -423,8 +429,9 @@ h3 {
     line-height: normal;
     text-transform: capitalize;
 }
+
 .card2 button:hover {
-        background: #23263C;
+    background: #23263C;
 }
 
 .cover > section:nth-of-type(3) span {
@@ -558,7 +565,8 @@ h3 {
     text-transform: uppercase;
     border: none;
 }
-.cover > section:nth-of-type(5) button:hover{
+
+.cover > section:nth-of-type(5) button:hover {
     background: #23263C;
 }
 
@@ -647,6 +655,7 @@ footer ul li button {
     line-height: normal;
     text-transform: capitalize;
 }
-footer ul li button:hover{
+
+footer ul li button:hover {
     background: #23263C;
 }
