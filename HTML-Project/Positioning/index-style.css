@@ -218,7 +218,13 @@ h3 {
     text-transform: capitalize;
     margin-top: 6px;
 }
-
+.cover > section:nth-of-type(2) > div > p:nth-of-type(2)>span{
+    text-decoration: line-through;
+}
+.cover > section:nth-of-type(2) > div > p:nth-of-type(2)>svg{
+    position: relative;
+    top: 11px;
+}
 .decorative-space {
     display: inline-flex;
     position: relative;
