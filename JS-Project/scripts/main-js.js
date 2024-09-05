@@ -11,21 +11,20 @@ url.searchParams.set('limit', '10');
 fetch(url)
     .then(value => value.json())
     .then(usersObj => {
-        const users = usersObj;
-        for (const user of users) {
+        for (const user of usersObj) {
             let div = document.createElement('div');
             div.classList.add('user-block');
             let h1 = document.createElement('h1');
-            h1.innerText = user.name;
+            h1.innerText = usersObj.name;
             let h2 = document.createElement('h2');
-            h2.innerText = `ID: ${user.id}`;
+            h2.innerText = `ID: ${usersObj.id}`;
             let bttn = document.createElement('button');
             bttn.innerText = 'More info'
             bttn.classList.add('more-info')
             bttn.onclick = function (ev) {
                 ev.preventDefault();
                 window.location = "user-details.html";
-                let userId = user.id;
+                let userId = usersObj.id;
                 localStorage.setItem('userId', JSON.stringify(userId));
 
             }

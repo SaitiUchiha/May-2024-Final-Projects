@@ -13,8 +13,7 @@ const url = new URL(`https://jsonplaceholder.typicode.com/users/${USER_ID}/posts
 fetch(url)
     .then(value => value.json())
     .then(postObj => {
-        const postInfo = postObj;
-        const detInfo = postInfo.find(x => x.id === POST_ID);
+        const detInfo = postObj.find(x => x.id === POST_ID);
         for (const key in detInfo) {
             const h2 = document.createElement('h2');
             h2.innerText = `${key}: ${detInfo[key]}`;
