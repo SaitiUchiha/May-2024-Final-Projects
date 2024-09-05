@@ -21,6 +21,7 @@ fetch(url)
             h2.innerText = `ID: ${user.id}`;
             let bttn = document.createElement('button');
             bttn.innerText = 'More info'
+            bttn.classList.add('more-info')
             bttn.onclick = function (ev) {
                 ev.preventDefault();
                 window.location = "user-details.html";
