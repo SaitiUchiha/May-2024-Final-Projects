@@ -11,8 +11,7 @@ const url = new URL('https://jsonplaceholder.typicode.com/users');
 fetch(url)
     .then(value => value.json())
     .then(usersObj => {
-        const users = usersObj
-        for (const user of users) {
+        for (const user of usersObj) {
             let div = document.createElement('div');
             div.classList.add('user-block');
             let h1 = document.createElement('h1');
