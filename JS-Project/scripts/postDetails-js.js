@@ -32,6 +32,7 @@ fetch(url)
                     const comments = commObj;
 
                     function iterateComments(obj) {
+                        // підкажіть як зробити так щоб перший divComm не був пустий, але в одночас щоб не присвоювати колному елементу divComm.
                         let divComm = document.createElement('div');
                         divComm.classList.add('comment-div');
                         divComments.appendChild(divComm);
