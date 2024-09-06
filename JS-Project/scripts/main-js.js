@@ -7,24 +7,25 @@
 const allUsrers = document.getElementsByClassName('all-users')[0];
 
 const url = new URL('https://jsonplaceholder.typicode.com/users');
-url.searchParams.set('limit', '10');
+// url.searchParams.set('limit', '10');
 fetch(url)
     .then(value => value.json())
     .then(usersObj => {
-        for (const user of usersObj) {
+        const users = usersObj
+        for (const user of users) {
             let div = document.createElement('div');
             div.classList.add('user-block');
             let h1 = document.createElement('h1');
-            h1.innerText = usersObj.name;
+            h1.innerText = user.name;
             let h2 = document.createElement('h2');
-            h2.innerText = `ID: ${usersObj.id}`;
+            h2.innerText = `ID: ${user.id}`;
             let bttn = document.createElement('button');
             bttn.innerText = 'More info'
             bttn.classList.add('more-info')
             bttn.onclick = function (ev) {
                 ev.preventDefault();
                 window.location = "user-details.html";
-                let userId = usersObj.id;
+                let userId = user.id;
                 localStorage.setItem('userId', JSON.stringify(userId));
 
             }
