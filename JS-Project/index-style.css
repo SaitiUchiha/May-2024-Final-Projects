@@ -58,9 +58,8 @@ body{
     margin: 40px auto;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     width: 90%;
-    justify-content: space-between;
-    align-content: center;
     align-items: center;
     padding: 40px;
 }
